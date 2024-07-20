@@ -6,7 +6,7 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-title                    : "DiffusionClassifiers"
+title                    : "Diffusion Classifiers"
 description              : "An website for diffusion classifiers"
 repository               : "huanranchen/DiffusionClassifiers"
 google_scholar_stats_use_cdn : true
