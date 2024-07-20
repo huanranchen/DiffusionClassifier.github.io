@@ -30,7 +30,8 @@ Diffusion classifiers are inherently robust against O.O.D. data and adversarial 
 ![image](images/flows/DC.png)
 
 - directly using a single diffusion model as generative classifiers.
-- solving $$\max_y \log p(x|y)$$ via enumeration, since $$p(y|x)=\text{softmax}(\log p(x|y))$$
+- solving $\max_y \log p(x|y)$ via enumeration.
+- since $p(y|x)=\text{softmax}(\log p(x|y))$, diffusion models can provide a much accurate likelihood estimation.
 
 
 ## Noised Diffusion Classifier ([paper](https://arxiv.org/abs/2305.15241)) ([code](https://github.com/huanranchen/NoisedDiffusionClassifiers))
