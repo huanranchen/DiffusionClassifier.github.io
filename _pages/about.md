@@ -30,14 +30,21 @@ Diffusion classifiers are inherently robust against O.O.D. data and adversarial 
 ![image](images/flows/DC.png)
 
 - directly using a single diffusion model as generative classifiers.
-- solving $\max_y \log p(x|y)$ via enumeration, since $p(y|x)=\text{softmax}(\log p(x|y))$
+- solving $$\max_y \log p(x|y)$$ via enumeration, since $$p(y|x)=\text{softmax}(\log p(x|y))$$
 
 
 ## Noised Diffusion Classifier ([paper](https://arxiv.org/abs/2305.15241)) ([code](https://github.com/huanranchen/NoisedDiffusionClassifiers))
 
-
+- Providing certified lower bound for diffusion classifiers against O.O.D. data.
+![image](images/flows/DCLipschitz.png)
+- Generalizing the diffusion classifier to handle corrupted data, while allowing us to provide a much tighter certified lower bound.
+![image](images/flows/NDCs.png)
 
 ## Likelihood Maximization: an efficient approximate posterior inference ([paper](https://github.com/huanranchen/DiffusionClassifier))
+
+![image](images/flows/LM.png)
+
+- Drag the O.O.D. data back to I.I.D.
 
 
 ## 📝 Diffusion Classifiers Papers
